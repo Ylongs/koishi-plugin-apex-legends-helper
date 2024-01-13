@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
-    "lib",
+    "lib/index.js",
+    "lib/index.d.ts",
     "dist"
   ],
   "license": "MIT",
@@ -13,9 +14,23 @@
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "Apex Legends"
   ],
   "peerDependencies": {
     "koishi": "^4.16.4"
+  },
+  "koishi": {
+    "description": {
+      "en": "Query the information about Apex Legends",
+      "zh": "查询Apex英雄地图、复制器轮换信息"
+    },
+    "locales": [
+      "zh"
+    ]
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "koishi-plugin-puppeteer": "^3.7.3"
   }
 }
